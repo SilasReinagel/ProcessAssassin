@@ -1,4 +1,4 @@
-# Process Assassin &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE) 
+# Process Assassin &middot; [![Build status](https://ci.appveyor.com/api/projects/status/k5xp9v6dbdi231f3?svg=true)](https://ci.appveyor.com/project/TheoConfidor/processassassin) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE) 
 
 Process Assassin is a .NET Core Console Application
 
