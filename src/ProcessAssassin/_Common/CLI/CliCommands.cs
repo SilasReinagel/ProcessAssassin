@@ -19,7 +19,7 @@ public sealed class CliCommands : ICliCommands
 
     public void Execute(string name, string[] args)
     {
-        if (!_commands.ContainsKey(name))
+        if (!_commands.ContainsKey(name.ToLowerInvariant()))
             throw new KeyNotFoundException($"Unknown command '{name}'");
         _commands[name](args);
     }

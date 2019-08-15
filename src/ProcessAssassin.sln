@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinProcessKiller", "WinProcessKiller\WinProcessKiller.csproj", "{8745EA36-C178-42D7-9BA2-3D2EA1BAC3DC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProcessAssassin", "ProcessAssassin\ProcessAssassin.csproj", "{8745EA36-C178-42D7-9BA2-3D2EA1BAC3DC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

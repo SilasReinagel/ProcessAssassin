@@ -1,7 +1,7 @@
 using System.Diagnostics;
 using System.Linq;
 
-namespace WinProcessKiller.Commands
+namespace Commands
 {
     public sealed class ViewCurrentProcessNames : ICliCommand
     {

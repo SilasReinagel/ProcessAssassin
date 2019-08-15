@@ -2,7 +2,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading;
 
-namespace WinProcessKiller.Commands
+namespace Commands
 {
     public sealed class Run : ICliCommand
     {

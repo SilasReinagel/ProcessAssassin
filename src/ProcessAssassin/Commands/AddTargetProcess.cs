@@ -1,4 +1,4 @@
-namespace WinProcessKiller.Commands
+namespace Commands
 {
     public sealed class AddTargetProcess : ICliCommand
     {
