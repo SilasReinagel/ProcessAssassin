@@ -1,3 +1,4 @@
+using System;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading;
@@ -28,13 +29,22 @@ namespace Commands
                     .Where(x => targets.Contains(x.ProcessName))
                     .OrderBy(x => x.ProcessName)
                     .ToList()
-                    .ForEach(x =>
-                    {
-                        x.Kill();
-                        _log.Info($"Killed {x.ProcessName}");
-                    });
+                    .ForEach(Kill);
                 
                 Thread.Sleep(2000);
+            }
+        }
+
+        private void Kill(Process p)
+        {                    
+            try
+            {
+                p.Kill();
+                _log.Info($"Killed {p.ProcessName}");
+            }
+            catch (Exception e)
+            {
+                _log.Error($"Error: {e}");
             }
         }
     }
