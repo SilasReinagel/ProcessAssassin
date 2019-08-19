@@ -1,18 +1,20 @@
+using ProcessAssassin._Common.CLI;
+
 namespace Commands
 {
     public sealed class AddTargetProcess : ICliCommand
     {
         private readonly ILog _log;
         private readonly IStored<ProcessTargetList> _targets;
-        public string Name => "add";
-        public string HelpText => "Adds Targeted Process";
 
         public AddTargetProcess(ILog log, IStored<ProcessTargetList> targets)
         {
             _log = log;
             _targets = targets;
         }
-        
+
+        public CliCommandDoc Info { get; } = new CliCommandDoc("add") { Description = "Adds Targeted Process", RequiredPositionalArgs = "processname".AsList() };
+
         public void Execute(string[] args)
         {
             if (args.Length < 1)

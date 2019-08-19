@@ -10,7 +10,7 @@ public sealed class CliCommands : ICliCommands
         : this ((IEnumerable<ICliCommand>)commands) {}
     
     public CliCommands(IEnumerable<ICliCommand> commands)
-        : this(commands.ToDictionary(x => x.Name.ToLowerInvariant(), k => (Action<string[]>)(k.Execute))) {}
+        : this(commands.ToDictionary(x => x.Name().ToLowerInvariant(), k => (Action<string[]>)(k.Execute))) {}
     
     public CliCommands(Dictionary<string, Action<string[]>> commands)
     {

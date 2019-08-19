@@ -1,6 +1,7 @@
 using System.Diagnostics;
 using System.Linq;
 using System.Threading;
+using ProcessAssassin._Common.CLI;
 
 namespace Commands
 {
@@ -8,15 +9,18 @@ namespace Commands
     {
         private readonly IStored<ProcessTargetList> _targets;
         private readonly ILog _log;
-
-        public string Name => "run";
-        public string HelpText => "Runs the Process Killer";
         
         public Run(ILog log, IStored<ProcessTargetList> targets)
         {
             _targets = targets;
             _log = log;
         }
+
+        public CliCommandDoc Info { get; } = new CliCommandDoc("run")
+        {
+            IsDefaultCommand = true, 
+            Description = "Runs the Process Assassin"
+        };
 
         public void Execute(string[] args)
         {
