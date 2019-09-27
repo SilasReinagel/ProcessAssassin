@@ -16,7 +16,7 @@ Process Assassin is a .NET Core Console Application
 
 ## Build
 
-1. Install the [.NET Core SDK 2.0+](https://dotnet.microsoft.com/download)
+1. Install the [.NET Core SDK 3.0+](https://dotnet.microsoft.com/download)
 2. Clone this repository `git clone https://github.com/SilasReinagel/ProcessAssassin/`
 3. Navigate to the `src` folder in your local repository and run `dotnet build`
 

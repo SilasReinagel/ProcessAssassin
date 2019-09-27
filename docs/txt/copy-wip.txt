@@ -1,0 +1,76 @@
+Does your computer have a whole bunch of programs running secretly in the background, and slowing down your computer?
+
+When your computer is your primary productivity tool, wasted time costs you $$$, as well as harming your mental health by adding extra stress that you really don't need. 
+
+That's exactly what happened to me reguarly on my company laptop. 
+
+Recently, I was writing some code at work, and my computer started to FREEZE! It became totally non-responsive for nearly 30 seconds! 
+
+As a developer, I always hate it when my computer isn't operating blazingly fast, but this time, it was WORSE. 
+
+It was worse because I was pair programming with another developer at that time. The computer freezing was WASTING his time, as well as mine.
+
+I quickly opened Task Manager to see what the culprit was.
+
+And...
+
+I discovered that an auto-update background process, and a virus scan program were burning up my CPU and Hard Disk Access. 
+
+Since I'm on a work computer, there are some programs that I'm not allowed to tinker with. There are a bunch of trackers, and scanners, and low-budget regulatory software. But, that doesn't mean they should prevent me from getting work done...
+
+----
+
+So, I created ProcessAssassin!
+
+It's running right now on my computer as I am typing this.
+
+And I wanted to share this tool with you. You already know if this is a tool that will save you tons of time!
+
+It's trivial to setup, and then just happily runs in the background, killing that processes you specified without any more intervention.
+
+Maybe, there is a scheduled task that automatically relaunches a targeted process every hour. BAM! DEAD!
+Maybe, there are some nasty telemetry processes that launch on startup. BAM! DEAD!
+Maybe, a program you like is trying to spawn a rogue process in the background. BAM! DEAD!
+
+Process Assassin will kill them whenever they show up, within 2 seconds!
+
+----
+
+Who is ProcessAssassin for?
+
+This is a tool for computer workers who are using machines that they don't have full control over.
+
+
+Who is ProcessAssassin NOT for?
+
+People with carefully controlled personal computers.
+
+
+----
+
+
+How do you get started using Process Assassin?
+
+Process Assassin CLI is Free Open Source Software. 
+
+1) Visit the project Github page
+2) Star it 
+3) Follow the directions in the README!
+
+That's ALL you have to do to save your valuable time and reduce unneeded stress.
+
+Use Process Assassin to kill runtime launched processes of any kind that you don't want.
+
+----
+
+Do you wish there was a GUI version of this App Available? 
+
+Do you wish there were some other features?
+
+Open or upvote an Issue here:
+
+----
+
+Process Assassin just killed 40+ processes in the time it took me to tell you this story. My text editor probably would have become unresponsive otherwise...
+
+[Insert Sample Image]
