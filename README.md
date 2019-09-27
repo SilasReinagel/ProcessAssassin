@@ -26,7 +26,7 @@ Process Assassin is a .NET Core Console Application
 
 After Building the project:
 
-1. `dotnet publish` targetting your [system's runtime](https://docs.microsoft.com/en-us/dotnet/core/rid-catalog)
+1. `dotnet publish -r win-x64 -c Release /p:PublishSingleFile=true` targetting your [system's runtime](https://docs.microsoft.com/en-us/dotnet/core/rid-catalog)
 2. Copy the publish output to the installation folder of your choice
 
 ----
