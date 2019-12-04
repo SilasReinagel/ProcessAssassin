@@ -48,7 +48,7 @@ namespace Commands
             }
             catch (Exception e)
             {
-                _log.Error($"Error: {e}");
+                _log.Error($"Unable to kill{p.ProcessName} - Error: {e}");
             }
         }
     }
